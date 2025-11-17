@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import model.carton.Carton;
-import patters.observer.NumeroObserver;
+import patrones.observer.NumeroObserver;
 
 /**
  *

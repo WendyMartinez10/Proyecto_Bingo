@@ -4,8 +4,8 @@
  */
 package model.carton;
 
-import patters.observer.NumeroObserver;
-import view.PanelCarton;
+import patrones.observer.NumeroObserver;
+import Vistas.PanelCarton;
 
 /**
  *

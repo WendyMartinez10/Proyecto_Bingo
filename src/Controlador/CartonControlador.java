@@ -5,7 +5,7 @@
 package Controlador;
 
 import model.carton.Carton;
-import patters.factory.CartonFactory;
+import patrones.factory.CartonFactory;
 
 /**
  *

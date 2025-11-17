@@ -10,9 +10,9 @@ import model.juego.Juego;
 import model.juego.TableroNumeros;
 import model.juego.Tombola;
 import model.juego.TipoJuego;
-import view.PanelResultados;
-import view.PanelTablero;
-import view.PanelTombola;
+import Vistas.PanelResultados;
+import Vistas.PanelTablero;
+import Vistas.PanelTombola;
 
 /**
  *

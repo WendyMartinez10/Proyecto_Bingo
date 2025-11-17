@@ -5,7 +5,7 @@
 package Controlador;
 
 import model.juego.Tombola;
-import view.PanelTombola;
+import Vistas.PanelTombola;
 
 /**
  *

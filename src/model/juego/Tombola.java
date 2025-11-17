@@ -8,8 +8,8 @@ package model.juego;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import patters.observer.NumeroObserver;
-import patters.observer.NumeroSubject;
+import patrones.observer.NumeroObserver;
+import patrones.observer.NumeroSubject;
 
 /**
  *
