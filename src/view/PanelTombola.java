@@ -4,7 +4,7 @@
  */
 package view;
 
-import controller.JuegoController;
+import controller.JuegoControlador;
 import javax.swing.JOptionPane;
 
 /**
@@ -126,7 +126,7 @@ public void mostrarNumero(String numero) {
         lblNumero.setText(numero);
     }
 
-  public void setJuegoController(JuegoController controller, boolean esManual) {
+  public void setJuegoController(JuegoControlador controller, boolean esManual) {
     btnSacarBola.addActionListener(e -> {
         if (esManual) {
             // Pedir número al usuario

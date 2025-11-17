@@ -5,7 +5,7 @@
 package model.carton;
 
 import patrones.observer.NumeroObserver;
-import Vistas.PanelCarton;
+import view.PanelCarton;
 
 /**
  *

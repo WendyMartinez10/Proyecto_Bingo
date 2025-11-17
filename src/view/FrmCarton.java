@@ -2,14 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Vistas;
+package view;
 
 import javax.swing.JFrame;
 import model.carton.Carton;
 
 /**
  *
- * @author Gipsy
+ * @author joans
  */
 public class FrmCarton extends javax.swing.JFrame {
 

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Controlador;
+package controller;
 
 import java.util.List;
 import model.carton.Carton;
@@ -10,9 +10,9 @@ import model.juego.Juego;
 import model.juego.TableroNumeros;
 import model.juego.Tombola;
 import model.juego.TipoJuego;
-import Vistas.PanelResultados;
-import Vistas.PanelTablero;
-import Vistas.PanelTombola;
+import view.PanelResultados;
+import view.PanelTablero;
+import view.PanelTombola;
 
 /**
  *

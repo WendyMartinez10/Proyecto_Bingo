@@ -4,8 +4,8 @@
  */
 package view;
 
-import controller.CartonController;
-import controller.JuegoController;
+import controller.CartonControlador;
+import controller.JuegoControlador;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
@@ -31,7 +31,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private PanelTombola panelTombola;
     private PanelResultados panelResultados;
 
-    private JuegoController juegoController;
+    private JuegoControlador juegoController;
 
     /**
      * Creates new form FrmPrincipal
@@ -53,7 +53,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
     private void iniciarJuegoSegunModo() {
 
-        CartonController controller = new CartonController();
+        CartonControlador controller = new CartonControlador();
         java.util.List<Carton> lista = new java.util.ArrayList<>();
 
         if ("AUTOMATICO".equals(modo)) {
@@ -101,7 +101,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         this.modo = modo;
         this.cantidadCartones = cantidadCartones;
 
-        juegoController = new controller.JuegoController(panelTablero, panelTombola, panelResultados);
+        juegoController = new controller.JuegoControlador(panelTablero, panelTombola, panelResultados);
 
         iniciarJuegoSegunModo();
         pnlResultados.add(panelResultados, java.awt.BorderLayout.CENTER);
@@ -295,7 +295,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
             return;
         }
 
-        CartonController controller = new CartonController();
+        CartonControlador controller = new CartonControlador();
         Carton cartonNuevo;
 
         if (opcion == 0) {
