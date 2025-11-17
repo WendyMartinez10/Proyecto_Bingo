@@ -8,8 +8,8 @@ package model.juego;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import patrones.observer.NumeroObserver;
-import patrones.observer.NumeroSubject;
+import patters.observer.NumeroObserver;
+import patters.observer.NumeroSubject;
 
 /**
  *
@@ -39,9 +39,7 @@ public class Tombola implements NumeroSubject{
         }
     }
 
-    // -----------------------------
-    //        LÓGICA DEL BINGO
-    // -----------------------------
+   
  public int sacarNumero() {
     int numero;
 

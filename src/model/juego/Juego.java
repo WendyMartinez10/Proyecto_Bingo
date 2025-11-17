@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import model.carton.Carton;
-import patrones.observer.NumeroObserver;
+import patters.observer.NumeroObserver;
+
 
 /**
  *
@@ -35,9 +36,7 @@ public class Juego implements NumeroObserver {
         tombola.agregarObserver(this);
     }
 
-    // ================================
-    //     CONFIGURAR PARTIDA
-    // ================================
+ 
     public void agregarCarton(Carton carton) {
         cartones.add(carton);
         tombola.agregarObserver(carton); 
@@ -67,10 +66,6 @@ public class Juego implements NumeroObserver {
         return ultimoNumero;
     }
 
-    // ================================
-    //        FLUJO DEL JUEGO
-    // ================================
-    
     public void sacarNumero() {
         if (hayGanador) {
            
@@ -109,9 +104,7 @@ public void marcarNumeroManual(int numero) {
         verificarGanadores();
     }
 
-    // ================================
-    //         VERIFICAR GANADOR
-    // ================================
+  
     public void verificarGanadores() {
         for (Carton c : cartones) {
 
@@ -157,9 +150,7 @@ public void marcarNumeroManual(int numero) {
         }
     }
 
-    // ================================
-    //         REINICIAR JUEGO
-    // ================================
+   
     public void reiniciar() {
         hayGanador = false;
         cartonGanador = null;

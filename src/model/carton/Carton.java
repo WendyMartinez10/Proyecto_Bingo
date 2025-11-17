@@ -4,7 +4,7 @@
  */
 package model.carton;
 
-import patrones.observer.NumeroObserver;
+import patters.observer.NumeroObserver;
 import view.PanelCarton;
 
 /**
@@ -60,9 +60,6 @@ public Carton(String id, int[][] numeros) {
     
 
 
-    // ======================================================
-    //                  MÉTODOS DE MARCACIÓN
-    // ======================================================
 public void marcar(int numero) {
 
     boolean encontrado = false;
@@ -104,9 +101,6 @@ public void reiniciar() {
         }
     }
 
-    // ======================================================
-    //                MÉTODOS DE VERIFICACIÓN
-    // ======================================================
 
     public boolean cuatroEsquinas() {
         return marcados[0][0] && marcados[0][4]
@@ -163,9 +157,7 @@ public void reiniciar() {
         return true;
     }
 
-    // ======================================================
-    //      Método general para verificar si es ganador
-    // ======================================================
+   
     public boolean esGanadorNormal() {
 
         for (int i = 0; i < 5; i++)
@@ -182,9 +174,6 @@ public void reiniciar() {
         return false;
     }
 
-    // ======================================================
-    //         IMPLEMENTACIÓN DEL PATRÓN OBSERVER
-    // ======================================================
     @Override
     public void actualizarNumero(int numeroSalido) {
         marcar(numeroSalido);
